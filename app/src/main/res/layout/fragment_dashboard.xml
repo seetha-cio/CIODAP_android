@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:id="@+id/ll_topButtonHolder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/deviceScanner"
+            android:text="DEVICE SCANNER"
+            style="@style/Widget.Button.dashboardDeviceScaner"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/device_scaner_button"
+            android:background="@drawable/scaner_button_background"/>
+
+        <Button
+            android:id="@+id/newSurvey"
+            android:text="NEW SURVEY"
+            style="@style/Widget.Button.dashboardNewSurvey"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/new_survey_button"
+            android:background="@drawable/survey_button_background"/>
+
+        <Button
+            android:id="@+id/trialSurvey"
+            android:text="TRIAL SURVEY"
+            style="@style/Widget.Button.dashboardTrialSurvey"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/trial_survey_button"
+            android:background="@drawable/trial_scan_button_background"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll_topButtonHolder"
+        >
+
+        <Button
+            android:id="@+id/listSurvey"
+            android:text="LIST SURVEY"
+            style="@style/Widget.Button.dashboardListSurvey"
+            android:layout_width="0dp"
+            android:layout_weight="1"            android:layout_height="match_parent"
+            android:drawableTop="@drawable/list_survey_button"
+            android:background="@drawable/list_survey_button_background"/>
+
+        <Button
+            android:id="@+id/dashReports"
+            android:text="REPORTS"
+            style="@style/Widget.Button.dashboardReports"
+            android:layout_width="0dp"
+            android:layout_weight="1"            android:layout_height="match_parent"
+            android:drawableTop="@drawable/dash_report_button"
+            android:background="@drawable/report_button_background"/>
+
+        <Button
+            android:id="@+id/dashTutorial"
+            android:text="TUTORIAL"
+            style="@style/Widget.Button.dashboardTutorial"
+            android:layout_width="0dp"
+            android:layout_weight="1"            android:layout_height="match_parent"
+            android:drawableTop="@drawable/dash_tutorial_button"
+            android:background="@drawable/tutorial_button_background"/>
+
+    </LinearLayout>
+
+</LinearLayout>
